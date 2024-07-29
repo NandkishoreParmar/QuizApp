@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="quiz-container" id="quiz-container">
+      <div id="start-screen">
+        <h1>Welcome to the Quiz</h1>
+        <p>Instructions:</p>
+        <ul>
+          <li>There are 20 questions in this quiz.</li>
+          <li>Maintain screen focus to avoid alerts.</li>
+          <li>After 2 alerts, the quiz will automatically stop.</li>
+        </ul>
+        <button id="start-btn">Start Quiz</button>
+      </div>
+
+      <div id="quiz-screen" class="hidden">
+        <div id="question-container">
+          <div id="question">Question text</div>
+          <div id="answer-buttons" class="btn-container">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+          </div>
+        </div>
+        <div class="progress-container">
+          <div id="progress">Question 1 of 22</div>
+          <div id="alerts">Alerts: 0</div>
+          <div id="timer">Time left: 10min</div>
+        </div>
+      </div>
+
+      <div id="result-screen" class="hidden">
+        <h1>Quiz Complete!</h1>
+        <p id="score"></p>
+        <button id="restart-btn">Restart Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
